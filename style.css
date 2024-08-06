@@ -661,6 +661,13 @@ span {
         font-size: 1.6rem;
         margin-left: 2rem;
     }
+
+    #intro {
+        max-width: 1000px;
+    }
+    #intro p {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -671,7 +678,17 @@ span {
         font-size: 1.4rem;
         margin-left: 1rem;
     }
+
+    #intro {
+        max-width: 850px;
+    }
+    #intro p {
+        font-size: 1.1rem;
+        margin-right: 1rem;
+    }
 }
+
+
 
 @media screen and (max-width: 895px) {
     .header {
@@ -705,7 +722,15 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
+
+    #intro {
+        max-width: 800px;
+    }
+    #intro p {
+        font-size: 1.1rem;
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     .header {
@@ -730,6 +755,15 @@ span {
     .text-animation {
         font-size: 2.4rem;
     }
+
+    #intro {
+        max-width: 500px;
+    }
+    #intro p {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
     .skills h2 {
         font-size: 3rem;
     }
@@ -762,10 +796,38 @@ span {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #intro {
+        max-width: 900px;
+    }
+    #intro p {
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .projects-container {
         grid-template-columns: 1fr;
     }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic {
+        justify-content: center;
+    }
+    #pic img {
+        width: 30rem;
+        height: auto;
+    }
+    #intro {
+        max-width: 700px;
+    }
+    #intro p {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
 }
+
+

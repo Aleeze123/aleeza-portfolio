@@ -756,6 +756,7 @@ span {
 }
 
 /* Projects section responsive styles */
+@media screen and (max-width: 1024px) {
 
     .projects-container {
         grid-template-columns: repeat(2, 1fr);

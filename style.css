@@ -267,7 +267,7 @@ span {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -280,22 +280,26 @@ span {
 #pic {
     display: flex;
     align-items: flex-start;
-    flex: 1;
-    border-radius: 50%;
+    justify-content: center;
+    margin-bottom: 20px
 }
 
 #pic img {
-    position: relative;
-    width: 35rem;
-    height: 23vw;
+     width: 100%;
+    max-width: 35rem;
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
+
 }
 
 #intro {
-    flex: 3;
-    max-width: 1300px;
+     max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 #intro p {
@@ -661,13 +665,6 @@ span {
         font-size: 1.6rem;
         margin-left: 2rem;
     }
-
-    #intro {
-        max-width: 1000px;
-    }
-    #intro p {
-        font-size: 1.2rem;
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -677,14 +674,6 @@ span {
     .navbar a {
         font-size: 1.4rem;
         margin-left: 1rem;
-    }
-
-    #intro {
-        max-width: 850px;
-    }
-    #intro p {
-        font-size: 1.1rem;
-        margin-right: 1rem;
     }
 }
 
@@ -722,13 +711,6 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-    #intro {
-        max-width: 800px;
-    }
-    #intro p {
-        font-size: 1.1rem;
-    }
 }
 
 
@@ -756,14 +738,6 @@ span {
         font-size: 2.4rem;
     }
 
-    #intro {
-        max-width: 500px;
-    }
-    #intro p {
-        font-size: 1rem;
-        margin-right: 0.5rem;
-    }
-
     .skills h2 {
         font-size: 3rem;
     }
@@ -778,16 +752,6 @@ span {
         align-items: center;
         text-align: center;
     }
-    .about {
-        padding: 20px;
-    }
-    #pic img {
-        width: 25rem;
-        height: auto;
-    }
-    #intro {
-        max-width: 90%;
-    }
 }
 
 /* Projects section responsive styles */
@@ -797,13 +761,6 @@ span {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #intro {
-        max-width: 900px;
-    }
-    #intro p {
-        font-size: 1.2rem;
-        margin-right: 1.5rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -811,23 +768,31 @@ span {
         grid-template-columns: 1fr;
     }
     .about {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
     }
+
     #pic {
-        justify-content: center;
+        flex: 1;
+        margin-right: 20px;
     }
-    #pic img {
-        width: 30rem;
-        height: auto;
-    }
+
     #intro {
-        max-width: 700px;
+        flex: 3;
     }
+
     #intro p {
-        font-size: 1rem;
-        margin-right: 1rem;
+        margin-right: 0;
     }
 }
+@media (max-width: 767px) {
+    #pic img {
+        max-width: 20rem;
+        height: auto;
+    }
 
+    #pic {
+        margin-bottom: 20px;
+    }
+}
 

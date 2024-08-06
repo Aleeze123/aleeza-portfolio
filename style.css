@@ -1,4 +1,3 @@
-
 /* Base styles */
 * {
     margin: 0;
@@ -380,7 +379,7 @@ span {
 }
 
 .projects-box .projects-info:hover {
-    background: radial-gradient(rgb(69, 69, 206), var(--main-color));
+    background: radial-gradient(rgb(211, 167, 8), var(--main-color));
     transform: scale(1.1);
 }
 
@@ -757,7 +756,7 @@ span {
 }
 
 /* Projects section responsive styles */
-@media screen and (max-width: 1024){
+
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -768,5 +767,3 @@ span {
         grid-template-columns: 1fr;
     }
 }
-
-
